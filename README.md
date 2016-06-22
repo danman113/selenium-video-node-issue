@@ -33,7 +33,16 @@ docker ps -a
 ```
 
 ##Getting the error
+To actually get the chrome node to crash, send any google chrome test to the hub (to get the ip, run `docker-machine ip`).  
+I used `python test_docker_video.py`.
 
+This will crash the node. To get the logs from the crashed node run:
+
+`docker logs c1`
+
+This will copy the stdout of the docker-container running the chrome node to your stdout.
+
+#Finally, thanks a lot aimmac23. I owe you a coffee.
 
 
 
